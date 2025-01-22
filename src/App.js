@@ -12,11 +12,8 @@ function App() {
       <div className="container mt-4">
         {/* Routes will render the corresponding page component */}
         <Routes>
-          {/* Redirect from root path ("/") to /home */}
-          <Route path="/" element={<Navigate to="/home" />} />
-          
           {/* Define the /home route */}
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           
           {/* Define other routes */}
           <Route path="/videos" element={<Videos />} />
