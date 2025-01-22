@@ -1,0 +1,58 @@
+.modal-dialog.custom-modal {
+    max-width: 300px; /* Default modal width */
+    margin: 0 auto; /* Center horizontally */
+  }
+  
+  .modal.fade.show {
+    display: flex !important; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-body {
+    background: transparent; /* Transparent modal body */
+    padding: 0; /* Remove padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #zoomedProfilePic {
+    border-radius: 50%; /* Circular image */
+    animation: slideIn 0.5s ease-out; /* Slide-in animation */
+    max-width: 100%; /* Responsive image */
+  }
+  
+  /* Responsive Modal Size */
+  @media (max-width: 768px) {
+    .modal-dialog.custom-modal {
+      max-width: 300px; /* Smaller modal size */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .modal-dialog.custom-modal {
+      max-width: 400px; /* Larger modal size for desktops */
+    }
+  }
+  
+  /* Slide-in Animation */
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .modal-content {
+    background: transparent !important; /* Transparent modal */
+    border: none !important; /* Remove borders */
+    box-shadow: none !important; /* Remove shadow */
+    padding: 0 !important;
+  }
+  

@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Retro📈",
+    "poster": "images/retro_poster.jpg",
+    "sources": {
+      "1080": "/videos/retro_1080.mp4"
+    }
+  },
+  {
+    "title": "Billy butcher🔪",
+    "poster": "images/butcher_poster.jpg",
+    "sources": {
+      "1080": "/videos/butcher_1080.mp4"
+    }
+  },
+  {
+    "title": "Redefining thuppaki!",
+    "poster": "images/thuppakkitext.png",
+    "sources": {
+      "1080": "/videos/thuppakki_1080.mp4"
+    }
+  },
+  {
+    "title": "Indhu || mukund",
+    "poster": "images/amarantext.png",
+    "sources": {
+      "1080": "/videos/Amaran_1080.mp4"
+    }
+  },
+  {
+    "title": "Flawless!",
+    "poster": "images/flawlesstext.png",
+    "sources": {
+      "1080": "/videos/Flawless_1080.mp4"
+    }
+  },
+  {
+    "title": "jd core!",
+    "poster": "images/jdtext.png",
+    "sources": {
+      "1080": "/videos/jd_1080.mp4"
+    }
+  }
+]

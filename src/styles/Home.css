@@ -1,0 +1,33 @@
+.home-content {
+  display: flex;
+  flex-direction: column; /* Default: stack content vertically */
+  gap: 1.5rem; /* Space between text and image */
+}
+
+@media (min-width: 992px) { /* Large screens */
+  .home-content {
+    flex-direction: row; /* Arrange content side-by-side */
+    justify-content: flex-start; /* Align to the left */
+    align-items: flex-start; /* Top-align content */
+    gap: 2rem; /* Space between text and image */
+  }
+}
+
+.text-content {
+  flex: 1; /* Allow text to take up space */
+  max-width: 600px; /* Limit text width */
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center; /* Center image horizontally on small screens */
+  align-items: center; /* Center image vertically within its container */
+  flex: 1; /* Allow image to take up space */
+}
+
+.home-image {
+  width: 100%; /* Make image responsive */
+  max-width: 500px; /* Prevent image from exceeding a specific size */
+  aspect-ratio: 1 / 1; /* Maintain square shape */
+  object-fit: cover; /* Ensures content fits perfectly */
+}
