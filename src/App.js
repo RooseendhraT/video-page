@@ -1,23 +1,21 @@
 import React from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom';  // Import Navigate for redirection
-import Navbar from './components/Navbar'; // Import Navbar component
-import Home from './components/Home'; // Import Home page
-import Videos from './components/Videos'; // Import Videos page
-import About from './components/About'; // Import About page
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Videos from './components/Videos';
+import About from './components/About';
 
 function App() {
   return (
     <>
-      <Navbar /> {/* This renders the Navbar */}
+      <Navbar />
       <div className="container mt-4">
-        {/* Routes will render the corresponding page component */}
         <Routes>
-          {/* Define the /home route */}
           <Route path="/" element={<Home />} />
-          
-          {/* Define other routes */}
           <Route path="/videos" element={<Videos />} />
           <Route path="/about" element={<About />} />
+          {/* Redirect any invalid route to Home */}
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
     </>
