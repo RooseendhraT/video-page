@@ -2,7 +2,7 @@
   "name": "video-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/RooseendhraT/video-page",
+  "homepage": "https://rooseendhrat.github.io/video-page",
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
