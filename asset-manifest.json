@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/RooseendhraT/video-page/static/css/main.ff0a044b.css",
+    "main.js": "/RooseendhraT/video-page/static/js/main.2f7b5a80.js",
+    "index.html": "/RooseendhraT/video-page/index.html",
+    "main.ff0a044b.css.map": "/RooseendhraT/video-page/static/css/main.ff0a044b.css.map",
+    "main.2f7b5a80.js.map": "/RooseendhraT/video-page/static/js/main.2f7b5a80.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff0a044b.css",
+    "static/js/main.2f7b5a80.js"
+  ]
+}
