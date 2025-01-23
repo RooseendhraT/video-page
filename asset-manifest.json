@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/RooseendhraT/video-page/static/css/main.ff0a044b.css",
-    "main.js": "/RooseendhraT/video-page/static/js/main.2f7b5a80.js",
-    "index.html": "/RooseendhraT/video-page/index.html",
-    "main.ff0a044b.css.map": "/RooseendhraT/video-page/static/css/main.ff0a044b.css.map",
-    "main.2f7b5a80.js.map": "/RooseendhraT/video-page/static/js/main.2f7b5a80.js.map"
+    "main.css": "/video-page/static/css/main.f58654e7.css",
+    "main.js": "/video-page/static/js/main.d3729499.js",
+    "index.html": "/video-page/index.html",
+    "main.f58654e7.css.map": "/video-page/static/css/main.f58654e7.css.map",
+    "main.d3729499.js.map": "/video-page/static/js/main.d3729499.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff0a044b.css",
-    "static/js/main.2f7b5a80.js"
+    "static/css/main.f58654e7.css",
+    "static/js/main.d3729499.js"
   ]
 }
