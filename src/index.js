@@ -9,6 +9,7 @@ import './styles/Navbar.css';
 import './styles/Modal.css';
 import './styles/videoCard.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
 
 const rootElement = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElement);

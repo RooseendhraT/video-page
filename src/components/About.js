@@ -1,4 +1,6 @@
 import React from 'react';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const About = () => (
   <div className="container mt-4">
@@ -15,7 +17,9 @@ const About = () => (
     <p>
       Rest assured, no external sources (videos or images) are used directly. All content here has been edited and adapted by me.
     </p>
-    <h2 style={{ paddingBottom: '20px' }}>For more</h2>
+    <h2
+    style={{ paddingBottom: '10px' }}
+    > For more </h2>
     <div className="d-flex flex-column align-items-center">
       <a
         href="mailto:rooseendhrat@gmail.com"
