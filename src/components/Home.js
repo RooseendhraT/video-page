@@ -1,4 +1,6 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
   return (
@@ -19,93 +21,46 @@ const Home = () => {
       {/* Image Wrapper and Carousel Container */}
       <div className="image-wrapper d-flex justify-content-center align-items-center">
         <div className="carousel-container">
-          <div
-            id="homeCarousel"
-            className="carousel slide"
-            data-bs-ride="carousel"
-            data-bs-interval="3000"
+          <Carousel
+            ride="carousel"
+            interval={3000} // Auto slide interval
           >
-            {/* Carousel Indicators */}
-            <div className="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#homeCarousel"
-                data-bs-slide-to="0"
-                className="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#homeCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#homeCarousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-            </div>
+            <Carousel.Item>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/amaran.png`}
+                alt="amaran_cover"
+                className="d-block w-100"
+              />
+              <Carousel.Caption>
+                <h3>Recent</h3>
+                <p>Indhu | Mukund</p>
+              </Carousel.Caption>
+            </Carousel.Item>
 
-            {/* Carousel Inner */}
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/amaran.png`}
-                  alt="amaran_cover"
-                  className="d-block w-100"
-                />
-                <div className="carousel-caption">
-                  <h3>Recent</h3>
-                  <p>Indhu | Mukund</p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/flawless.png`}
-                  alt="flawless_cover"
-                  className="d-block w-100"
-                />
-                <div className="carousel-caption">
-                  <h3>Previous</h3>
-                  <p>Flawless</p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <img
-                  src={`${process.env.PUBLIC_URL}/images/jd.png`}
-                  alt="jd_cover"
-                  className="d-block w-100"
-                />
-                <div className="carousel-caption">
-                  <h3>Earlier</h3>
-                  <p>JD core!</p>
-                </div>
-              </div>
-            </div>
+            <Carousel.Item>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/flawless.png`}
+                alt="flawless_cover"
+                className="d-block w-100"
+              />
+              <Carousel.Caption>
+                <h3>Previous</h3>
+                <p>Flawless</p>
+              </Carousel.Caption>
+            </Carousel.Item>
 
-            {/* Carousel Controls */}
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#homeCarousel"
-              data-bs-slide="prev"
-            >
-              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Previous</span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#homeCarousel"
-              data-bs-slide="next"
-            >
-              <span className="carousel-control-next-icon" aria-hidden="true"></span>
-              <span className="visually-hidden">Next</span>
-            </button>
-          </div>
+            <Carousel.Item>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/jd.png`}
+                alt="jd_cover"
+                className="d-block w-100"
+              />
+              <Carousel.Caption>
+                <h3>Earlier</h3>
+                <p>JD core!</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
         </div>
       </div>
     </div>

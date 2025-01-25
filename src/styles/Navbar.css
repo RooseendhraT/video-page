@@ -33,7 +33,6 @@
   width: 30px;
   height: 2px;
   background-color: white;
-  transition: all 0.2s ease;
 }
 
 /* Before and After pseudo-elements */
