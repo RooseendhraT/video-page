@@ -13,7 +13,7 @@ const Videos = () => {
   }, []);
 
   return (
-    <div className="container mt-4">
+    <div className="">
       <h1>Videos</h1>
       <p>Check out our curated video content!</p>
 

@@ -9,52 +9,51 @@ const Navbar = () => {
   const toggleModal = () => setShowModal(!showModal);
 
   // Close modal when clicking outside the image
-  const handleBackdropClick = (event) => {
-    if (event.target.classList.contains('modal')) {
-      setShowModal(false);
-    }
-  };
+ // const handleBackdropClick = (event) => {
+  //  if (event.target.classList.contains('modal')) {
+ //     setShowModal(false);
+ //   }
+ // };
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand d-flex align-items-center" to="/">
-          <img
-            src={process.env.PUBLIC_URL + '/images/profile-pic.png'}
+          {/*<img
+            src={'default-profile.jpg'}
             alt="Logo"
             className="img-fluid rounded-circle"
             style={{ maxWidth: '60px' }}
             onClick={toggleModal} // Trigger modal on click
-          />
-          <span className="ms-3 project-title">ROOSEE.ZE</span>
+          />*/}
+          <i
+            className="fas fa-user img-fluid rounded-circle"
+            style={{ maxWidth: '60px', cursor: 'pointer' }}
+            onClick={toggleModal} // Trigger modal on click
+          ></i>
+          <span className="ms-3 name-title">ROOSEE.ZE</span>
         </Link>
 
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        {/* Hidden checkbox and label for CSS toggle */}
+        <input type="checkbox" className="navbar-toggler-checkbox" id="navbar-toggler-checkbox" />
+        <label className="navbar-toggler" htmlFor="navbar-toggler-checkbox">
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </label>
 
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav d-flex align-items-center justify-content-lg-end w-100">
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" style={{ color: 'rgba(255, 255, 255, 0.8)' }} to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/videos">
+              <Link className="nav-link" style={{ color: 'rgba(255, 255, 255, 0.8)' }} to="/videos">
                 Videos
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" style={{ color: 'rgba(255, 255, 255, 0.8)' }} to="/about">
                 About
               </Link>
             </li>
@@ -62,7 +61,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Modal Component */}
+      {/* Modal Component 
       {showModal && (
         <div
           className="modal fade show"
@@ -83,6 +82,7 @@ const Navbar = () => {
           </div>
         </div>
       )}
+        */}
     </nav>
   );
 };

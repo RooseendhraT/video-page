@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 
 const About = () => (
-  <div className="container mt-4">
+  <div className="">
     <h2>About</h2>
     <p>
       Welcome to my website! Here, you'll find the same videos I shared on Instagram—but with much better quality.

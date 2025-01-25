@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container mt-4">
+      <div className="container-fluid mt-3">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/videos" element={<Videos />} />
